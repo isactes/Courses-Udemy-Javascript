@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Dom, eventos y funciones </title>
+    <script type="text/javascript" src="dom-formulario.js"></script>
+    
+
+    <style>
+        .div {
+            width: 20px;
+            height: 30px;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        form{
+            margin: 2px;
+        }
+        label{
+            display: flex;
+            align-items: flex-start;
+            margin: .3rem;
+            padding: .1rem;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            float: right;
+            margin: 20px;
+            border: solid 3px;
+            border-radius: 15px;
+        }
+        .dashed {
+            border-color: blueviolet;
+            border-radius: 20px;
+        }
+        .box .dashed > h3{
+            margin: 2px 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--Formulario
+        1° Campos: Nombre, apelledos y edad
+        2° Boton de enviar formularios evento sudmit
+        3° Mostrar datos por pnatalla 
+        4° Tener un boton que dar click nosmuestra datos actuales del formulario
+    -->
+    <h1>Ejercicio DOM, eventos y funciones Curso JS Isac REnovato</h1>
+
+    <div class="">
+        <h2>Formulario Ejercicios de JS DOM</h2>
+    </div>
+    <div class="box">
+        <form action="#" method="post" id="formulario" onsubmit="return false">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos">
+
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad">
+
+            <input type="submit" value="Enviar" id="submit">
+        </form>
+    </div>
+    <div class="box dashed">
+        <h3>Informacion del usuario</h3>
+        <div>
+            <p id="p_nombre">Nombre: <span></span></p>
+            <p id="p_apellidos">Apellidos: <span></span></p>
+            <p id="p_edad">Edad: <span></span></p>
+        </div>
+    </div>
+    <div class="" id="">
+        Escribe tu nombre
+    </div>
+</body>
+</html>
